@@ -23,7 +23,7 @@ requestUrl="$baseurl?fq=$field:(%22$search_field%22)&api-key=$key&page=$page"
 results=`curl -s $requestUrl | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 
 # Display the results
-echo "Total news-items in database=" $results
+echo "Total news-items in database:" $results
 
 # Build a second URL (this could be changed later so that all information is retrieved via a single URL)
 requestUrl2="$baseurl?fq=$field2:(%22$search_field2%22)&api-key=$key&page=$page"
