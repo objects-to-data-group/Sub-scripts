@@ -57,4 +57,4 @@ requestUrl4="$baseurl?fq=$field2:(%22$search_field2%22)&begin_date=$begin_date_y
 results4=`curl -s $requestUrl4 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 
 # Display the fourth results
-echo "Total front-page articles in database:" $results4
+echo "Total front-page articles in database within the 1850's:" $results4
