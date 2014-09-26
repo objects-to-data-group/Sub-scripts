@@ -1,9 +1,11 @@
-Problems to tackle
+Needed Information
 ==================
 
-- Overzicht totaal aantal artikelen per decennium in enkel de NY-Times in de dataset
+(Place the number or numbers of the script(s) that gather (part of) the required information between brackets)
 
-- Overzicht totaal aantal artikelen per decennium in enkel de NY-Times in API
+- The total number of news-items per decade within the NY-Times pre-defined dataset (script 2)
+
+-  The total number of news-items per decade  within the NY-Times API (script 1)
 
 - Overzicht totaal aantal front-page artikelen per decennium in enkel de NY-Times in de dataset
 
