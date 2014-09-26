@@ -13,6 +13,13 @@ search_field="The+New+York+Times"
 field2="type_of_material"
 # Enter a query to be searched for within the second field
 search_field2="Front+Page"
+# The following lines allow you to select a single decade (someone has an idea on how to extract multiple decades one by one automaticaly?)
+begin_date_year="1850"
+begin_date_month="01"
+begin_date_day="01"
+end_date_year="1859"
+end_date_month="12"
+end_date_day="31"
 # Since the first results immediately show the total number of hits we only need page 0
 page=0
 
@@ -33,3 +40,21 @@ results2=`curl -s $requestUrl2 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
 
 # Display the second results
 echo "Total front-page articles in database:" $results2
+
+# Build a third URL (this could be changed later so that all information is retrieved via a single URL and the retrieved decades change automatically)
+requestUrl3="$baseurl?fq=$field:(%22$search_field%22)&begin_date=$begin_date_year$begin_date_month$begin_date_day&end_date=$end_date_year$end_date_month$end_date_day&api-key=$key&page=$page"
+
+# Filter the number of hits from the 3rd results
+results3=`curl -s $requestUrl3 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
+
+# Display the third results
+echo "Total news-items in database within the 1850's:" $results3
+
+# Build a fourth URL (this could be changed later so that all information is retrieved via a single URL and the retrieved decades change automatically)
+requestUrl4="$baseurl?fq=$field2:(%22$search_field2%22)&begin_date=$begin_date_year$begin_date_month$begin_date_day&end_date=$end_date_year$end_date_month$end_date_day&api-key=$key&page=$page"
+
+# Filter the number of hits from the 4th results
+results4=`curl -s $requestUrl4 | awk -F ':' '{print $4}' | sed -E 's/,"time"//'`
+
+# Display the fourth results
+echo "Total front-page articles in database:" $results4
