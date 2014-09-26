@@ -1,7 +1,8 @@
 Sub-scripts
 ===========
 
-Partial scripts that tackle sub-questions of our research
+Partial scripts that tackle sub-questions of our research.
+View required-scrips.md
 
 ## Script 1
 
