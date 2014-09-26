@@ -23,4 +23,4 @@ The second textfile encapsulates the total number of front-page articles within 
 
 An echo-line prints an explanation-line to lable the retrieved data. 
 
-The results are printed beneath the explanationline by pasting the two previously created text-files. 
+The results are printed beneath the explanation-line by pasting the two previously created text-files. 
