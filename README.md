@@ -3,7 +3,7 @@ Sub-scripts
 
 Partial scripts that tackle sub-questions of our research
 
-Script 1
+## Script 1
 
 This script draws information from the NY-Times article-search API. 
 
