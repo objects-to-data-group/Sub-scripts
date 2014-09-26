@@ -3,7 +3,7 @@ Sub-scripts
 
 Partial scripts that tackle sub-questions of our research.
 
-View required-scrips.md
+View required-scrips.md within the sub-scrips repository.
 
 ## Script 1
 
