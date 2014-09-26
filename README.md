@@ -13,6 +13,10 @@ It defines the total number of news-items hidden within the dataset that is atta
 
 It defines the total number of front-page articles within the dataset that is attached to the API. 
 
+It defines the total number of 1850's news-items hidden within the dataset that is attached to the API. 
+
+It defines the total number of 1850's front-page articles within the dataset that is attached to the API. 
+
 It prints the results into the command-line interface. 
 
 * Developments needed: 
