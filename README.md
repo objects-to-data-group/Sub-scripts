@@ -13,6 +13,12 @@ It defines the total number of front-page articles within the dataset that is at
 
 It prints the results into the command-line interface. 
 
+Developments needed: 
+
+Instead of the total number of ALL news-items it should rule out blogs, since those form a very specific type of news-item that only came into excistence over the last few decades. They do not form part of the actual newspaper. Or do they? Somebody willing to find out?
+
+Can someone figure out a way to show the results per decade?
+
 ## Script 2
 
 This script creates 2 textfiles: 
@@ -24,3 +30,7 @@ The second textfile encapsulates the total number of front-page articles within 
 An echo-line prints an explanation-line to lable the retrieved data. 
 
 The results are printed beneath the explanation-line by pasting the two previously created text-files. 
+
+Developments needed:
+
+Instead of the total number of ALL news-items it should rule out blogs, since those form a very specific type of news-item that only came into excistence over the last few decades. They do not form part of the actual newspaper. Or do they? Somebody willing to find out?
